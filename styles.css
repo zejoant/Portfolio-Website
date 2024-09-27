@@ -52,7 +52,7 @@ p{
 #w-c-divider{
     aspect-ratio: 900/200;
     width: 100vw;
-    background: url(Resources/2-wave.svg);
+    background: url(Resources/gray-green-waves.svg);
     background-size:cover;
     background-repeat: no-repeat;
     
@@ -85,7 +85,11 @@ p{
 .info-sub-element{
     width: 60%;
     color: #d2d0b1;
+
     font-size: 1.2vw;
+    background: linear-gradient(to right, #d2d0b1, #b795c0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about-me{
@@ -104,18 +108,42 @@ p{
     background-repeat: no-repeat;
 }
 
-#c-p-divider{
+#c-p1-divider{
     aspect-ratio: 900/200;
     width: 100vw;
-    background: url(Resources/layer-waves-2.svg);
+    background: url(Resources/green-gray-waves.svg);
     background-size:cover;
     background-repeat: no-repeat;
 }
-#projects{
-    height: 500px;
+#projects1{
     background: #af3765;
+    background: url(Resources/circle-scatter-2.svg);
+    background-size:cover;
+    background-position:center;
 }
+#projects1-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.project-element{
+    margin: 5%;
+    height: 25vw;
+    width: 25vw;
 
+    background: #282c36;
+    border-style: solid;
+    border-image: linear-gradient(#3d9291 0%, #af3765 100%) 1;
+    box-shadow: 0px 0px 4vw #1f1d2c;
+}
+#p1-p2-divider{
+    aspect-ratio: 900/200;
+    width: 100vw;
+    background: url(Resources/gray-red-waves.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
 
 @media only screen and (max-width: 700px) {
     
