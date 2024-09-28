@@ -35,7 +35,7 @@ p{
     color: #d2d0b1;
     margin-top: 1%;
     margin-bottom: 1%;
-    font-size: 1/(20vw);
+    font-size: calc(1/(20vw));
 }
 
 #h-line{
@@ -51,7 +51,7 @@ p{
 
 #w-c-divider{
     aspect-ratio: 900/200;
-    width: 100vw;
+    width: 100%;
     background: url(Resources/gray-green-waves.svg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -59,12 +59,8 @@ p{
 }
 
 #info{
-    margin: 0;
-    padding: 0;
     background: url(Resources/circle-scatter-haikei.svg);
     background-size:cover;
-    width: 100%;
-    height: 100%;
 
     display: flex;
     flex-direction: row;
@@ -110,7 +106,7 @@ p{
 
 #c-p1-divider{
     aspect-ratio: 900/200;
-    width: 100vw;
+    width: 100%;
     background: url(Resources/green-gray-waves.svg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -137,23 +133,32 @@ p{
     border-image: linear-gradient(#3d9291 0%, #af3765 100%) 1;
     box-shadow: 0px 0px 4vw #1f1d2c;
 }
+
+.proj-el-top{
+    border-radius: 0.5vw;
+    width: 94%;
+    height: 80%;
+    margin: 3%;
+}
+.proj-el-bottom{
+    color: white;
+    width: 90%;
+    height: 14%;
+    margin: 3%;
+}
+
 #p1-p2-divider{
     aspect-ratio: 900/200;
-    width: 100vw;
+    width: 100%;
     background: url(Resources/gray-red-waves.svg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (orientation: portrait){
     
     #info{
-        margin: 0;
-        padding: 0;
         background-color: #3d9291;
-        width: 100%;
-        height: 100%;
-    
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -177,5 +182,15 @@ p{
         width: 60%;
         color: #d2d0b1;
         font-size: 3vw;
+    }
+
+    #w-c-divider{
+        aspect-ratio: 900/200;
+        width: 100%;
+        background: url(Resources/gray-green-waves.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+
+        
     }
 }
